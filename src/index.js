@@ -30,7 +30,7 @@ searchLine.addEventListener(
 );
 
 function onSearchLineInput(event) {
-  newsApiService.searchСountry = event.target.value;
+  newsApiService.searchСountry = event.target.value.trim();
 
   if (newsApiService.searchСountry !== '') {
     clearCardContainer();

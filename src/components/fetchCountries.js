@@ -1,6 +1,7 @@
 export default class NewsApiService {
     constructor() {
         this.searchСountry = '';
+        
     }
     
     fetchCountries(searchСountry) {
@@ -12,7 +13,6 @@ export default class NewsApiService {
                 return response.json()
             })
             .then(data => {
-                console.log(data)
                 return data;
             })
     }
